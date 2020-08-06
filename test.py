@@ -19,6 +19,7 @@ while 1:
             keyboard.press(Key.enter)
             keyboard.release(Key.enter)
     except:
+        sp.Popen(['python3','con.py'])
         sp.Popen(['python3','msgBox.py'])
         print("re-connecting")
         time.sleep(3)

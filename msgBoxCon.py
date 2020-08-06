@@ -30,12 +30,11 @@ y = (hs/2) - (h/2)
 # set the dimensions of the screen 
 # and where it is placed
 
-msg = '''Reconnecting
- bluetooth...'''
+msg = '''Reconnected...'''
 
 Messagebox.geometry('%dx%d+%d+%d' % (w, h, x, y))
 l3=Label( Messagebox, text=msg)
-l3.config(font=("Tahoma", 31, 'bold'), fg='red')
+l3.config(font=("Tahoma", 31, 'bold'), fg='green')
 l3.place(relx=.5, rely=.5, anchor="c")
 '''
 b3=Button(Messagebox, text="Okay", command=closewindow)
