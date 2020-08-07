@@ -10,6 +10,7 @@ while 1:
         ser = serial.Serial('/dev/rfcomm0', baudrate=9600)
         ser.flushInput()
         #def type():
+        sp.Popen(['python3','msgBoxCon.py'])
         s = None
         while True: 
             s = str(ser.readline().decode().strip('\r\n'))
